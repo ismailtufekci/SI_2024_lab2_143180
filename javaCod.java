@@ -1,4 +1,4 @@
-import java.util.List;
+ import java.util.List;
 
 class Item {
     String name;
@@ -79,15 +79,15 @@ public class SILab2 {
             else {
                 throw new RuntimeException("No barcode!"); //18
             }
-            if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'){ //21 
-                sum -= 30; //19
+            if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0'){ //19 
+                sum -= 30; //20
             }
         }
-        if (sum <= payment){ //20
-            return true; //21
+        if (sum <= payment){ //21
+            return true; //22
         }
         else {
-            return false; //22
+            return false; //23
         }
     }
-}//23
+}//24
